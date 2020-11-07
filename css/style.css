@@ -20,6 +20,7 @@ p {
   line-height: 1.6;
 }
 img { vertical-align: bottom; }
+/* 表題囲むBox*/
 #main h1 {
   background-image: url(../images/header_bg.jpg);
   padding: 13px 30px 10px 20px;
@@ -35,7 +36,8 @@ img { vertical-align: bottom; }
 }
 #main h3 {
   font-size: 18px;
-  border-left: solid 3px #b7a077;
+  /* 文字列の左に縦の太い線  */
+  border-left: solid 13px #b7a077;
   padding: 4px 9px 4px 14px;
 }
 /* ヘッダー */
@@ -54,8 +56,10 @@ header #header_contact {
 /* ナビゲーション */
 #global_navi {
   width: 980px;
-  clear: both;
+  clear: both;　
+  　　/* floatをClear */
   overflow: hidden;
+  　　/* 高さがなくなる現象を防止 */
   margin: 16px auto;
 }
 #global_navi ul {
@@ -211,8 +215,8 @@ footer small {
   overflow: hidden;
 }
 #point figure {
-  float: right;
-  margin: 0 0 0 16px;
+  float: left;  /* 写真の位置 */
+  margin: 0 16px 0 0;　/* 写真との余白　上右下左 */
 }
 #point figcaption {
   font-size: 12px;
@@ -221,6 +225,7 @@ footer small {
 }
 /* ニュース */
 #news dl { overflow: hidden; }
+    /* 高さがなくなる現象を防止 */
 #news dt {
   float: left;
   width: 8em;
