@@ -57,6 +57,7 @@ img {
     font-size: 26px;
     color: #44382d;
     border-bottom: solid 3px #716961;
+    /* margin-top: 20px; この値に変更→写真との間隔変更なし（他のサイト　間隔広がる3mm→5mm)*/
 }
 
 #main h2 {
@@ -303,6 +304,7 @@ footer small {
     width: 980px;
     height: 500px;
     margin: 0 auto 25px;
+    /* margin-bottom: 25px; 写真が左寄せになる。下との間隔変化無し*/
 }
 
 
@@ -356,7 +358,8 @@ footer small {
 /* Audio topPage */
 
 fig {
-    margin: 0;
+    /* margin: 0; */
+    margin: 10px;
 }
 
 
