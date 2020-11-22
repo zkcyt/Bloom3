@@ -65,7 +65,19 @@
                     <li>English</li>
                 </ol>
             </div>
-            <!-- <section id="point">
+            <br>
+            <br>
+            <!-- <div class="box15">
+                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div> -->
+
+            <section id="point">
+                <div class="box15">
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <!-- <h2>ブルームのこだわり</h2> -->
+                <section>
+                    <!-- <section id="point">
                 <h2>ブルームのこだわり</h2>
                 <section>
                     <h3>一人ひとりの個性に向き合う、のびのびとしたアレンジメント</h3>
@@ -98,75 +110,75 @@
         </div> -->
 
 
-            <!--/音声ファイル再生-->
-            <button onclick="stop()">停止</button>
-            <button onclick="play()" id="play">再生</button>
-            <script language="javascript" type="text/javascript">
-                var music = new Audio();
+                    <!--/音声ファイル再生-->
+                    <button onclick="stop()">停止</button>
+                    <button onclick="play()" id="play">再生</button>
+                    <script language="javascript" type="text/javascript">
+                        var music = new Audio();
 
-                function init() {
-                    music.preload = "auto";
-                    //music.src = "/audios/t-rex-roar.mp3";
-                    music.src = "/audios/130401000.mp3";
-                    //music.src = "./mymusic.mp3";　手持ちの音源ファイル名に変更
-                    music.load();
+                        function init() {
+                            music.preload = "auto";
+                            //music.src = "/audios/t-rex-roar.mp3";
+                            music.src = "/audios/130401000.mp3";
+                            //music.src = "./mymusic.mp3";　手持ちの音源ファイル名に変更
+                            music.load();
 
-                    music.addEventListener("ended", function() {
-                        music.currentTime = 0;
-                        music.play();
-                    }, false);
-                }
-
-                function play() {
-                    music.loop = true;
-                    music.play();
-                }
-
-                function stop() {
-                    music.pause();
-                    music.currentTime = 0;
-                }
-
-                init();
-            </script> -->
-            <!--/音声ファイル再生-->
-            <!--/メイン-->
-
-            <!-- サイド -->
-            <!-- <aside id="sidebar">
-                <section id="side_banner">
-                    <h2>関連リンク</h2>
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank"><img src="images/banner01.jpg" alt="ブルームブログ"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><img src="images/banner02.jpg" alt="イイネ！押してね！facebookページ"></a>
-                        </li>
-                        <!--　href="#"　リンク先が未定、target="_blank" リンク先は別ウィンドウで開く      -->
-            </ul>
-            </section> -->
-            <!-- <section id="side_contact">
-                    <h2>ご予約・お問い合わせ</h2>
-                    <address><i class="fa fa-phone"></i>052-232-8229</address>
-                    <p>受付時間 9:00〜18:00</p>
-                    <p><a href="contact.html" class="contact_button">お問い合わせフォーム</a></p>
-                </section>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bloom.ne.jp" data-text="あなただけのフラワーアレンジメント教室Bloom">Tweet</a>
-                <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
+                            music.addEventListener("ended", function() {
+                                music.currentTime = 0;
+                                music.play();
+                            }, false);
                         }
-                    }(document, 'script', 'twitter-wjs');
-                </script>
-            </aside> -->
-            <!-- /サイド -->
+
+                        function play() {
+                            music.loop = true;
+                            music.play();
+                        }
+
+                        function stop() {
+                            music.pause();
+                            music.currentTime = 0;
+                        }
+
+                        init();
+                    </script> -->
+                    <!--/音声ファイル再生-->
+                    <!--/メイン-->
+
+                    <!-- サイド -->
+                    <aside id="sidebar">
+                        <section id="side_banner">
+                            <h2>関連リンク</h2>
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="images/banner01.jpg" alt="ブルームブログ"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank"><img src="images/banner02.jpg" alt="イイネ！押してね！facebookページ"></a>
+                                </li>
+                                <!--　href="#"　リンク先が未定、target="_blank" リンク先は別ウィンドウで開く      -->
+                            </ul>
+                        </section> -->
+                        <section id="side_contact">
+                            <h2>ご予約・お問い合わせ</h2>
+                            <address><i class="fa fa-phone"></i>052-232-8229</address>
+                            <p>受付時間 9:00〜18:00</p>
+                            <p><a href="contact.html" class="contact_button">お問い合わせフォーム</a></p>
+                        </section>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bloom.ne.jp" data-text="あなただけのフラワーアレンジメント教室Bloom">Tweet</a>
+                        <script>
+                            ! function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + '://platform.twitter.com/widgets.js';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, 'script', 'twitter-wjs');
+                        </script>
+                    </aside>
+                    <!-- /サイド -->
         </div>
         <!--/wrapper-->
 
